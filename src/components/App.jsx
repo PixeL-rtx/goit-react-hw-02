@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Feedback from "./components/Feedback/Feedback";
-import Options from "./components/Options/Options";
-import Notification from "./components/Notification/Notification";
-import Description from "./components/Description/Description";
-import "./style.css";
+import Feedback from "./Feedback/Feedback";
+import Options from "./Options/Options";
+import Notification from "./Notification/Notification";
+import Description from "./Description/Description";
+import "../style.css";
 
 const App = () => {
   const [feedback, setFeedback] = useState(() => {
@@ -38,7 +38,7 @@ const App = () => {
         options below.
       </p>
       <Options
-        onFeedback={updateFeedback}
+        updateFeedback={updateFeedback}
         resetFeedback={resetFeedback}
         totalFeedback={totalFeedback}
       />
