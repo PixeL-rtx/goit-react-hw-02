@@ -1,8 +1,9 @@
 .options {
   margin: 20px 0;
+  gap: 15px;
 }
 
 button {
-  margin-right: 10px;
+  /* margin-right: 10px; */
   border-radius: 10px;
 }
